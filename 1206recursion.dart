@@ -32,7 +32,7 @@ void main(){
 //   print("factorial is: $result");
 // }
 
-//factorial of list of  numbers
+//power of a number
 int power(a, b){
   if (b!=0){
     return a*power(a, b-1);
