@@ -5,11 +5,18 @@ class Flight {
   String? airlines;
 
 
-//default container
-Flight(){
-  name = "ABCD";
-  number = 1406;
-  airlines= "Vistara";
+//default constructor
+// Flight(){
+//   name = "ABCD";
+//   number = 1406;
+//   airlines= "Vistara";
+// }
+
+//paramertized constructor
+Flight(String name, int number, String airlines){
+  this.name = name;
+  this.number = number;
+  this.airlines = airlines;
 }
 
 @override
@@ -19,8 +26,10 @@ String toString(){
 }
 
 void main(){
-  var flight1 = Flight();
+  // var flight1 = Flight();
   var flight2 = Flight("NA", 2209, "Vistara");
-  print(flight1);
+  // print(flight1);
+  print(flight2);
 
 }
+
